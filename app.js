@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://demo:standup123@ds217092.mlab.com:17092/standupmeetingnotes');
+
 var app = express();
 
 var swig = require('swig');
