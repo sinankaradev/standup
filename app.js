@@ -8,11 +8,13 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+// mongoose
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://demo:standup123@ds217092.mlab.com:17092/standupmeetingnotes');
 
 var app = express();
 
+// swig
 var swig = require('swig');
 app.engine('html', swig.renderFile);
 

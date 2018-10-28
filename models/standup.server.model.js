@@ -9,3 +9,6 @@ var standupSchema = new Schema({
     impedment:String,
     createdOn:{type:Date, default:Date.now}
 });
+
+// export model
+module.exports = mongoose.model('Standup', standupSchema);
